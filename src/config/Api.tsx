@@ -1,12 +1,12 @@
 import "./Login.css";
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 
+export const Api = () => {
+ return(
 
-const Login = () => {
-  return (
+ 
     <div className="container">
-  
       <h2 className="logo">"It’s a great day to be a producer!"</h2>
       <form id="login-form">
         <div className="form-group">
@@ -28,18 +28,16 @@ const Login = () => {
         <button className="logoogle" type="submit">
           Login with google
         </button>
-        {/* Ajout des liens pour "Create new account" et "Forgot password" */}
         <div className="additional-links">
-          <Link to="/create-account" className="create-account-link">
-            Create new account
-          </Link>
-          <Link to="/forgot-password" className="forgot-password-link">
-            Forgot password ?
-          </Link>
+          <Link to="/create-account" className="create-account-link">Create new account</Link>
+          <Link to="/forgot-password" className="forgot-password-link">Forgot password ?</Link>
         </div>
       </form>
     </div>
-  );
+  )
 };
 
-export default Login;
+
+
+ 
+
