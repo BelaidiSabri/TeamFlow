@@ -1,16 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { BrowserRouter as Router } from "react-router-dom";
+import "./App.css";
+import Login from "./components/Login/Login";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-    <h1>Team Flow</h1>
+      <Router>
+        <Login />
+      </Router>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
